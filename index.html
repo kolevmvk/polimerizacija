@@ -83,7 +83,7 @@
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted loop playsinline id="bg-video">
       <source src="assets/images/hedlight-lo-hi-beam.mp4" type="video/mp4">
     </video>
 
@@ -763,6 +763,19 @@
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('bg-video');
+    function checkAutoplay() {
+        if (video.paused) {
+            video.play().catch(error => {
+                console.error("Video can't autoplay: ", error);
+                // Opcionalno: Sakrijte video ili prikažite alternativnu sliku
+            });
+        }
+    }
+    video.addEventListener('loadeddata', checkAutoplay);
+    checkAutoplay();
+});
     //according to loftblog tut
     $('.nav li:first').addClass('active');
 
