@@ -755,6 +755,7 @@ banner
   top: 50%;
   transform: translateY(-50%);
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .main-banner .caption h6 {
