@@ -1,0 +1,84 @@
+
+.calendar {
+    background-image: url('../images/backgnrd1.jpg'); /* Ista slika kao u `our-courses` */
+    background-position: center center;
+    background-attachment: fixed; /* Da se ponaša kao da je statična */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px; /* Uskladite vrednosti sa `our-courses` */
+    padding-bottom: 130px;
+}
+
+#calendar-container {
+    margin: 0 auto; /* Centriranje */
+    padding: 40px; /* Usklađeno sa susednom sekcijom */
+    background-color: rgba(255, 255, 255, 0.378); /* Lagana pozadina za kontrast sa slikom */
+    border-radius: 10px; /* Zaobljeni uglovi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Blaga senka */
+    max-width: 1200px; /* Ograničenje širine */
+}
+
+#calendar {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+    user-select: auto;
+    width: 100%; /* Ispunjava kontejner */
+    overflow: hidden;
+}
+
+.fc-unselectable {
+    pointer-events: auto !important;
+    user-select: auto !important;
+}
+
+
+.fc-day-today {
+    background-color: #cce5ff !important;
+    border: 1px solid #007bff !important;
+}
+
+.fc-daygrid-day {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.fc-daygrid-day:hover {
+    background-color: #e9ecef;
+}
+
+button.list-group-item {
+    border: 1px solid #dee2e6;
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    transition: all 0.3s;
+}
+
+button.list-group-item:hover {
+    transform: scale(1.05);
+    background-color: #e2e6ea;
+}
+
+button.list-group-item.text-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+button.list-group-item.text-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+@media (max-width: 767px) {
+    .calendar {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #calendar-container {
+        padding: 20px;
+    }
+}
