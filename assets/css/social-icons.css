@@ -1,0 +1,37 @@
+
+#fixed-icons ul {
+  list-style: none; /* Uklanja stilove liste */
+  padding: 0; /* Uklanja padding */
+  margin: 0; /* Uklanja margin */
+}
+
+#fixed-icons ul li {
+  margin: 10px 0; /* Vertikalni razmak između ikona */
+}
+
+#fixed-icons ul li a {
+  font-size: 25px; /* Veća veličina ikona */
+  display: block; /* Omogućava vertikalno poravnanje */
+  width: 40px; /* Postavlja širinu ikone */
+  height: 40px; /* Postavlja visinu ikone */
+  line-height: 50px; /* Centrira ikonu vertikalno */
+  text-align: center; /* Centrira ikonu horizontalno */
+  background-color: #f0f0f0; /* Boja pozadine */
+  color: #333; /* Boja ikone */
+  border-radius: 50%; /* Čini da link bude kružan */
+  transition: background-color 0.3s, color 0.3s; /* Animacija za hover */
+}
+#fixed-icons ul li a:hover {
+  background-color: #555; /* Tamnija pozadina na hover */
+  color: #fff; /* Bela boja ikone na hover */
+  cursor: pointer; /* Promena pokazivača da naglasi klikabilnost */
+}
+
+#fixed-icons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Vertikalno poravnanje ikona */
+  align-items: center;
+}

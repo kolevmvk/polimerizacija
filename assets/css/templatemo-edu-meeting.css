@@ -248,7 +248,7 @@ header
 }
 
 .sub-header .right-icons ul li a {
-  color: #fff;
+  color: #fff !important;
   font-size: 14px;
   transition: all .3s;
 }
